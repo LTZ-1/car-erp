@@ -74,6 +74,11 @@ class CarController extends Controller
             ->with('success', 'Car deleted successfully');
     }
 
+    public function show(Car $car)
+    {
+        return view('cars.show', compact('car'));
+    }
+
     // Sales view
     public function available()
     {
