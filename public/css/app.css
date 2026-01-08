@@ -1,0 +1,279 @@
+/* ===== Reset & Base ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    background-color: #f4f6f8;
+    color: #111827;
+}
+
+/* ===== Layout ===== */
+.erp-layout {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* Sidebar */
+.erp-sidebar {
+    width: 240px;
+    background-color: #1f2937;
+    color: #ffffff;
+    padding: 20px;
+}
+
+.erp-sidebar h1 {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.erp-sidebar a {
+    display: block;
+    color: #d1d5db;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 6px;
+    margin-bottom: 6px;
+}
+
+.erp-sidebar a:hover {
+    background-color: #374151;
+    color: #ffffff;
+}
+
+/* Main content */
+.erp-main {
+    flex: 1;
+    padding: 24px;
+}
+
+/* Header */
+.erp-header {
+    margin-bottom: 24px;
+}
+
+.erp-header h2 {
+    font-size: 22px;
+}
+
+/* Alerts */
+.alert-success {
+    background-color: #dcfce7;
+    color: #166534;
+    padding: 12px;
+    border-radius: 6px;
+    margin-bottom: 16px;
+}
+
+/* Misc helpers */
+.link-primary {
+    color: #2563eb;
+    text-decoration: none;
+}
+
+.text-muted {
+    color: #6b7280;
+}
+
+.btn {
+    background-color: #2563eb;
+    color: #fff;
+    padding: 8px 12px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-danger {
+    background-color: #dc2626;
+}
+
+.btn-success {
+    background-color: #16a34a;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* ===== Sidebar Active State ===== */
+.erp-sidebar a.active {
+    background-color: #2563eb;
+    color: #ffffff;
+}
+
+/* ===== Forms ===== */
+.erp-form {
+    max-width: 600px;
+}
+
+.erp-form label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 500;
+    color: #374151;
+}
+
+.erp-form input,
+.erp-form select,
+.erp-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    margin-bottom: 16px;
+    font-size: 14px;
+}
+
+.erp-form input:focus,
+.erp-form select:focus,
+.erp-form textarea:focus {
+    outline: none;
+    border-color: #2563eb;
+}
+
+/* ===== Buttons ===== */
+.btn-primary {
+    background-color: #2563eb;
+    color: #ffffff;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    background-color: #1d4ed8;
+}
+
+.btn-danger {
+    background-color: #dc2626;
+    color: #ffffff;
+    padding: 8px 14px;
+    border: none;
+    border-radius: 6px;
+}
+
+.btn-secondary {
+    background-color: #e5e7eb;
+    color: #111827;
+    padding: 8px 14px;
+    border-radius: 6px;
+    border: none;
+}
+
+/* ===== Card ===== */
+.erp-card {
+    background-color: #ffffff;
+    padding: 24px;
+    border-radius: 8px;
+    margin-bottom: 16px;
+}
+
+/* ===== Tables ===== */
+.erp-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+}
+
+.erp-table th,
+.erp-table td {
+    padding: 12px;
+    border-bottom: 1px solid #e5e7eb;
+    text-align: left;
+    font-size: 14px;
+}
+
+.erp-table th {
+    background-color: #f9fafb;
+    color: #374151;
+    font-weight: 600;
+}
+
+.erp-table tr:hover {
+    background-color: #f1f5f9;
+}
+
+/* Status Badges */
+.status {
+    padding: 4px 8px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.status-pending {
+    background-color: #fef3c7;
+    color: #92400e;
+}
+
+.status-paid {
+    background-color: #dcfce7;
+    color: #166534;
+}
+
+/* Pagination */
+.pagination {
+    margin-top: 20px;
+}
+
+/* ===== Dashboard ===== */
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.dashboard-card {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    border-left: 4px solid #2563eb; /* subtle accent */
+}
+
+.dashboard-card h3 {
+    font-size: 14px;
+    color: #6b7280;
+    margin-bottom: 8px;
+}
+
+.dashboard-card .value {
+    font-size: 26px;
+    font-weight: 700;
+    color: #111827;
+}
+
+/* ===== Page Titles ===== */
+.page-title {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+/* ===== Alerts ===== */
+.alert {
+    padding: 12px 16px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+}
+
+.alert-success {
+    background-color: #dcfce7;
+    color: #166534;
+}
+
+.alert-error {
+    background-color: #fee2e2;
+    color: #991b1b;
+}
+
+/* ===== Content spacing ===== */
+.erp-content {
+    margin-top: 12px;
+}
+
