@@ -324,3 +324,31 @@ body {
     font-size: 26px;
     margin-bottom: 8px;
 }
+
+/* ===== Login Page ===== */
+.login-layout {
+    display: flex;
+    min-height: 100vh;
+}
+
+.login-form {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+.login-image {
+    flex: 1;
+    background-image: url('/images/auth/login.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+/* Hide image on small screens */
+@media (max-width: 768px) {
+    .login-image {
+        display: none;
+    }
+}
