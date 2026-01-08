@@ -24,6 +24,7 @@
     <table class="erp-table">
         <thead>
             <tr>
+                <th>Image</th>
                 <th>Brand</th>
                 <th>Model</th>
                 <th>Year</th>
@@ -36,6 +37,13 @@
         <tbody>
         @foreach($cars as $car)
             <tr>
+                <td>
+                    <img
+                        src="{{ asset('images/cars/default-car.jpg') }}"
+                        alt="Car Image"
+                        class="car-thumb"
+                    >
+                </td>
                 <td>{{ $car->brand }}</td>
                 <td>{{ $car->model }}</td>
                 <td>{{ $car->year }}</td>
