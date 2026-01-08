@@ -295,3 +295,32 @@ body {
     object-fit: cover;
     border-radius: 6px;
 }
+
+/* ===== Dashboard Hero ===== */
+.dashboard-hero {
+    background-image: url('/images/dashboard/hero.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 40px;
+    border-radius: 12px;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.dashboard-hero::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.45);
+    border-radius: 12px;
+}
+
+.dashboard-hero-content {
+    position: relative;
+    color: white;
+}
+
+.dashboard-hero h2 {
+    font-size: 26px;
+    margin-bottom: 8px;
+}

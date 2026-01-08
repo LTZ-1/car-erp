@@ -7,6 +7,13 @@
 
 <p>Welcome, {{ auth()->user()->name ?? 'Admin' }}!</p>
 
+<div class="dashboard-hero">
+    <div class="dashboard-hero-content">
+        <h2>Car Sales ERP</h2>
+        <p>Order to cash management system</p>
+    </div>
+</div>
+
 <div class="dashboard-grid" style="margin-top:20px;">
 
     <div class="dashboard-card">
